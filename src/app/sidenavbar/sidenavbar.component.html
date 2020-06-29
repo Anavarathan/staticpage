@@ -1,5 +1,5 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary" [containerInside]="false">
 
     <!-- Navbar brand -->
     <mdb-navbar-brand>
@@ -11,49 +11,79 @@
 
         <!-- Links -->
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link waves-light" mdbWavesEffect>
-                    Home<mdb-icon fas icon="caret-down"></mdb-icon>
-                </a>
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Home<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>
-                    Pages<mdb-icon fas icon="caret-down"></mdb-icon>
-                </a>
-            </li>
-
-
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>
-                    Features<mdb-icon fas icon="caret-down"></mdb-icon>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>
-                    Course<mdb-icon fas icon="caret-down"></mdb-icon>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>
-                    Events <mdb-icon fas icon="caret-down"></mdb-icon>
-                </a>
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Pages<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
             </li>
 
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Features<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Course<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Events<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link waves-light" mdbWavesEffect>
-                    Blog <mdb-icon fas icon="caret-down"></mdb-icon>
+                    Blog
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link waves-light" mdbWavesEffect>
-                    Elements <mdb-icon fas icon="caret-down"></mdb-icon>
+                    Elements
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>
-                    My CRUD <mdb-icon fas icon="caret-down"></mdb-icon>
+                <a class="nav-link waves-light" href="https://github.com/Anavarathan/CRUD" mdbWavesEffect>
+                    My CRUD
                 </a>
             </li>
 

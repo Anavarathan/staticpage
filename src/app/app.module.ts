@@ -1,7 +1,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -15,9 +16,10 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     SidenavbarComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
+    NgxSpinnerModule,
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
@@ -29,6 +31,7 @@ import { HomeComponent } from './home/home.component';
       }
     ])
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
